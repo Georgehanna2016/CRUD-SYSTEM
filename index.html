@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Assigment Route">
+    <meta name="keywords" content="Assigment ">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <section class="container py-5"> 
+
+        <label for="productName"> Product Name </label>
+        <input id="productName" type="text" class="form-control mb-4" placeholder="Product Name" >
+        
+        <label for="productPrice"> Product Price </label>
+        <input id="productPrice" type="number" class="form-control mb-4" placeholder="Product Price" >
+        
+        <label for="productCategory"> Product Category </label>
+        <input id="productCategory" type="text" class="form-control mb-4" placeholder="Product Category" >
+        
+        <textarea id="productDesc" type="text" class="form-control my-5" placeholder="Product Description" ></textarea>
+        <P class="alert text-center text-bg-danger h5 py-2 d-none">Please Enter All Data</P>
+        <button id="addbtn" onclick="addProduct()" class="btn btn-outline-info w-100" >ADD</button>
+    </section>
+    <section class="container px-0">
+        <input oninput="searchProduct(this.value)" id="search" type="text" class="form-control w-75 mx-auto mb-4" placeholder="Search" >
+        <table class=" table table-striped text-center px-0 ">
+            <thead class="">
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+
+            </thead>
+            <tbody id="tBody">
+              
+            </tbody>
+        </table>
+
+        
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
